@@ -1,3 +1,3 @@
-College-Project
-These are my second year projects
+
+Second year projects
 ===============
