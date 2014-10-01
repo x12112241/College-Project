@@ -1,0 +1,355 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 18-Nov-2013, 22:18:03
+    Author     : Brian Murphy
+*/
+
+
+h{
+    font-weight: bold; 
+}
+
+body{
+    color: white;
+    background-image: url(images/back1.jpg);
+}
+
+#iphone5cspecs{
+    font-family: sans-serif;
+    height: 870px;
+    width: 400px;
+    text-align: justify;
+    float: right;
+    padding: 10px;
+    clear: none;  
+    word-spacing: 5px;
+    font-size: 14px;
+    letter-spacing: 2px;
+    line-height: 35px;
+    color: #121212;
+    margin-right: 50px;
+    margin-top: 10px;
+    background-color: white;
+}
+
+#iphone5cimage1{
+    width:360px;
+    height:900px;
+    float: left;
+    margin-left: 50px;
+    clear: none;
+    color: black;
+}
+
+a{
+    padding: 10px;
+    margin-left:50px;
+    text-align: justify;
+}
+
+
+a:link,a:visited
+{
+    font-size: 18px;
+    font-weight:bold;
+    color:black;
+    text-align:center;
+    padding:4px;
+    text-decoration:none;
+    font-family: Segoe UI;
+}
+a:hover,a:active
+{
+    color: #0066cc;
+    background-color: #ededed;
+    height: 20px;
+    border-radius: 3px 3px 3px 3px;
+}
+
+#enter {
+    background-color:#9dce2c;
+    text-indent:0;
+    border:1px solid #83c41a;
+    display:inline-block;
+    color:#ffffff;
+    font-family:Trebuchet MS;
+    font-size:15px;
+    font-weight:bold;
+    font-style:normal;
+    height:40px;
+    line-height:40px;
+    width:80px;
+    text-decoration:none;
+    text-align:center;
+
+}
+#enter:hover {
+    background-color:#8cb82b;
+}#enter:active {
+    position:relative;
+    top:1px;
+}
+
+.formlabel{
+    text-align:right;
+    font-weight: bold;
+}
+
+
+#enterbutton{
+    float: left;
+    clear:none;
+    margin-top: 10px;
+    margin-left: 50px;
+}
+
+#heading{
+    float: left;
+    clear: none;
+    margin-left: 100px;
+    color: black;
+}
+
+#wrapper{
+    width:900px;;
+    height:1260px;
+    margin:0 auto;
+    padding-top: 20px;
+    border:1px solid #CCCCCC;
+    clear:none;
+    background-color: white;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 10px 10px 10px blue;
+}
+
+
+#buttons{
+    float:right;
+    clear: none;
+}
+
+#buttonh{
+    float: left;
+    clear: none;
+}
+
+#hr1{
+    border: 1px solid #ededed;
+    width: 90%;
+}
+
+#hr2{
+    border: 1px solid #378de5;
+    border-radius: 5px 5px;
+    width: 100%;
+}
+
+#hrhome{
+    width: 100%;
+}
+
+
+#param{
+    float: left;
+    margin-top: 20px;
+    margin-left: 30px;
+}
+
+#buying{
+    display:none;
+}
+
+
+
+#cost{
+    float:left;
+    margin-top: 50px;
+    margin-left: 90px;
+    color:navy;
+}
+
+.buttonh,.buttons, .aboutbut, .contactbut, .morebut,.videobut ,.vrsbut{
+	-moz-box-shadow:inset 0px 1px 0px 0px #bbdaf7;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #bbdaf7;
+	box-shadow:inset 0px 1px 0px 0px #bbdaf7;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #79bbff), color-stop(1, #378de5) );
+	background:-moz-linear-gradient( center top, #79bbff 5%, #378de5 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#79bbff', endColorstr='#378de5');
+	background-color:#79bbff;
+	-webkit-border-top-left-radius:0px;
+	-moz-border-radius-topleft:0px;
+	border-top-left-radius:0px;
+	-webkit-border-top-right-radius:0px;
+	-moz-border-radius-topright:0px;
+	border-top-right-radius:0px;
+	-webkit-border-bottom-right-radius:0px;
+	-moz-border-radius-bottomright:0px;
+	border-bottom-right-radius:0px;
+	-webkit-border-bottom-left-radius:0px;
+	-moz-border-radius-bottomleft:0px;
+	border-bottom-left-radius:0px;
+	text-indent:0;
+	border:1px solid #84bbf3;
+	display:inline-block;
+	color:#ffffff;
+	font-family:Trebuchet MS;
+	font-size:14px;
+	font-weight:bold;
+	font-style:normal;
+	height:40px;
+	line-height:40px;
+	width:130px;
+	text-decoration:none;
+	text-align:center;
+	text-shadow:1px 1px 0px #528ecc;
+}
+.buttonh:hover,.buttons:hover,.aboutbut:hover,.morebut:hover,.videobut:hover .vrsbut:hover {
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #378de5), color-stop(1, #79bbff) );
+	background:-moz-linear-gradient( center top, #378de5 5%, #79bbff 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#378de5', endColorstr='#79bbff');
+	background-color:#378de5;
+}.buttonh,.buttons :active {
+	position:relative;
+	top:1px;
+}
+
+#login{
+    text-align: justify;
+    font-family: sans-serif;
+    font-size: 10px;
+    width: 300px;
+    border-radius: 10px 10px 10px 10px;
+    padding: 10px 10px 10px;
+    background-color: white;
+    color: black;
+    text-align: center;
+}
+
+#loginlink{
+    color: green;
+    font-size: 10pt;
+}
+#loginlink:hover{
+    color: blue;
+}
+
+table{
+    color: black;
+}
+
+#videoindex{
+    margin-left:140px;
+    margin-top: 50px;
+}
+
+#banner{
+    margin-top: 40px;
+}
+
+textarea{
+    width: 100%;
+}
+
+#test{
+    margin: 20px 0;
+}
+
+#about{
+    color: black;
+    margin-top: 100px;
+    margin-left:100px;
+}
+
+#serverTime{
+    color: black;
+    margin-left: 50px;
+    clear: none;
+    float: left;
+}
+
+#specsXML{
+    margin-left: 15px;
+}
+
+#xmlinfo {
+    background-color:#9dce2c;
+    text-indent:0;
+    border:1px solid #83c41a;
+    display:inline-block;
+    color:#ffffff;
+    font-family:Trebuchet MS;
+    font-size:15px;
+    font-weight:bold;
+    font-style:normal;
+    height:40px;
+    line-height:40px;
+    width:150px;
+    text-decoration:none;
+    text-align:center;
+
+}
+#xmlinfo:hover {
+    background-color:#8cb82b;
+}#xmlinfo:active {
+    position:relative;
+    top:1px;
+}
+
+#table1, #tdxml{
+    width: 360px;
+    background-color: #FDFDFD;
+    border-collapse:collapse;
+    font-size: 12pt;
+}
+
+#about{
+    font-size: 13pt;
+    line-height: 200%;
+    color: #191970;
+    width: 700px;
+}
+
+#aboutbut{
+    margin-left: 100px;
+}
+
+#more{
+    font-size: 13pt;
+    line-height: 200%;
+    color: #191970;
+    width: 700px;
+    margin-left: 100px;
+    margin-top:50px;
+    display:none;
+}
+
+#video{
+    margin-left: 100px;
+    margin-top: 40px;
+    display: none;
+}
+
+#headtohead{
+    font-size: 13pt;
+    line-height: 200%;
+    color: #191970;
+    width: 700px;
+    margin-left: 100px;
+    margin-top: 30px;
+    display: none;
+}
+
+#banner2{
+    margin-left: 100px;
+    margin-top: 50px;
+    color: navy;
+}
+
+
+
+
+

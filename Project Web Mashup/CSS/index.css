@@ -1,0 +1,524 @@
+#google-map {
+width: 300px;
+height: 300px;
+}
+
+p,ul,li,h1,h2 { 
+margin:0; 
+padding:0; 
+} 
+ 
+#search_box {
+height: 40px;
+margin-left:auto;
+margin-right:auto;
+} 
+
+h1 { 
+font-size:24px; 
+margin-bottom:12px; 
+} 
+ 
+input[name=search_terms] { 
+font-size:20px;
+color: black; 
+font-weight:bold;
+display:inline-block; 
+border:0; 
+width:250px;
+height:40px;
+margin:0;
+vertical-align: top;
+border:none; 
+border-style: none;
+} 
+ 
+#search_button { 
+display:inline-block;
+border-width:0px 0px 0px 1px;
+margin:0;
+height:42px;
+-moz-box-shadow:inset 0px 1px 0px 0px #cae3fc;
+-webkit-box-shadow:inset 0px 1px 0px 0px #cae3fc;
+box-shadow:inset 0px 1px 0px 0px #cae3fc;
+background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #79bbff), color-stop(1, #4197ee) );
+background:-moz-linear-gradient( center top, #79bbff 5%, #4197ee 100% );
+filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#79bbff', endColorstr='#4197ee');
+background-color:#79bbff;
+color:#ffffff;
+font-family:Arial;
+font-size:15px;
+font-weight:bold;
+font-style:normal;
+line-height:40px;
+width:100px;
+text-decoration:none;
+text-align:center;
+} 
+ 
+.search_button:hover { 
+background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #4197ee), color-stop(1, #79bbff) );
+background:-moz-linear-gradient( center top, #4197ee 5%, #79bbff 100% );
+filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#4197ee', endColorstr='#79bbff');
+background-color:#4197ee; 
+} 
+ 
+.search_button:active { 
+position:relative; 
+} 
+ 
+#search_results{
+float: left;
+width: 55%;
+} 
+#search_results1{
+float: right;
+width: 30%;
+padding-right: 5%;
+}
+#results_wrapper{
+margin-top: 5%;
+}
+
+
+ul{
+list-style: none;
+}
+
+#errors1
+{
+margin-left:auto;
+margin-right: auto;
+position: relative;
+top: 50px;
+}
+
+#errors2
+{
+margin-left:auto;
+margin-right: auto;
+position: relative;
+top: 60px;
+color:red;
+}
+
+#errors3{
+color: red;
+margin-left:auto;
+margin-right: auto;
+position: relative;
+top: 50px;
+}
+
+input:-moz-placeholder{
+color:#CCCCFF;
+}
+
+#login{
+position: relative;
+top: 240px;
+padding: 10px;
+background-image: url('http://trendmashing.gopagoda.com/images/clearback.png');
+width: 320px;
+height: 130px;
+margin-left:auto;
+margin-right: auto;
+border-radius: 5px; 5px 5px 5px;
+}
+
+#loginform
+{
+padding: 10px;
+margin-left:auto;
+margin-right: auto;
+width: 200px;
+}
+
+#loggedin {
+font-family: 'Roboto', 'sans-serif';
+background-image: url('http://trendmashing.gopagoda.com/images/clearback.png');
+height: 38px;
+width: 100%;
+margin-left:auto;
+margin-right: auto;
+clear: none;
+}
+
+#userli{
+font-family: 'Roboto', 'sans-serif';
+position: relative;
+left: 10px;
+top: 8px;
+color:white;
+}
+
+#logoutlink li{
+font-family: 'Roboto', 'sans-serif';
+color: black;
+font-weight: 900;
+display: inline;
+left: 150px;
+top:-30px;
+position: relative;
+text-decoration: none;
+}
+
+#logoutlink a:link{
+text-decoration: none;
+color: black;
+}
+
+#logoutlink a:hover{
+text-decoration: none;
+color: red;
+}
+
+#loggedinlinks li{
+font-family: 'Roboto', 'sans-serif';
+color: black;
+font-weight: 900;
+display: inline;
+padding-right: 25px;
+float: right;
+right: 80px;
+top:-45px;
+position: relative;
+text-decoration: none;
+}
+
+#loggedinlinks a:link{
+text-decoration: none;
+color: black;
+}
+
+#loggedinlinks a:hover{
+text-decoration: none;
+color: blue;
+}
+
+#settings{
+border: 1px solid #CCC;
+padding: 10px;
+width: 400px;
+height: 350px;
+margin-left: auto;
+margin-right: auto;
+margin-top: 10px;
+background-image: url('http://trendmashing.gopagoda.com/images/clearback.png');
+border-radius: 5px 5px 5px 5px;
+}
+
+#settingsform li{
+padding-top: 10px;
+width: 200px;
+margin-left: auto;
+margin-right: auto;
+}
+
+#passwordform li{
+padding-top: 10px;
+width: 200px;
+margin-left: auto;
+margin-right: auto;
+}
+
+#registerform li{
+padding-top: 10px;
+width: 200px;
+margin-left: auto;
+margin-right: auto;
+}
+
+#changepass{
+border: 1px solid #CCC;
+padding: 10px;
+width: 400px;
+height: 350px;
+margin-left: auto;
+margin-right: auto;
+margin-top: 10px;
+background-image: url('http://trendmashing.gopagoda.com/images/clearback.png');
+border-radius: 5px 5px 5px 5px;
+}
+
+#h3settings, #h3pass{
+text-align: center;
+}
+
+#usercount{
+position: absolute;
+top: 60px;
+left: 15px;
+font-weight: bold;
+width: 250px;
+}
+
+#register{
+border: 1px solid #CCC;
+padding: 10px;
+width: 460px;
+height: 450px;
+margin-left: auto;
+margin-right: auto;
+margin-top: 10px;
+background-image: url('http://trendmashing.gopagoda.com/images/clearback.png');
+border-radius: 5px 5px 5px 5px;
+}
+
+#login_message{
+display: inline;
+}
+
+#uname{
+background: #F1F1F1 url('http://trendmashing.gopagoda.com/images/user.png') no-repeat;
+width: 150px;
+height:15px;
+margin-left: 2px;
+background-position: 3px -2px !important;
+padding: 8px 8px 8px 25px;
+border: 1px solid #CCC;
+-moz-border-radius: 5px;
+-webkit-border-radius: 5px;
+border-radius: 5px;
+-moz-box-shadow: 0 1px 1px #ccc inset, 0 1px 0 #fff;
+-webkit-box-shadow: 0 1px 1px #CCC inset, 0 1px 0 #FFF;
+box-shadow: 0 1px 1px #CCC inset, 0 1px 0 #FFF;
+} 
+#uname:focus { 
+background-color: #FFF; 
+border-color: #E8C291; 
+outline: none; 
+-moz-box-shadow: 0 0 0 1px #e8c291 inset; 
+-webkit-box-shadow: 0 0 0 1px #E8C291 inset; 
+box-shadow: 0 0 0 1px #E8C291 inset; 
+} 
+	
+#pass{
+background: #F1F1F1 url('http://trendmashing.gopagoda.com/images/pass.png') no-repeat;
+background-position: 3px -2px !important;
+width: 150px;
+height:15px;
+margin-left: 2px;
+border: 1px solid #CCC;
+padding: 8px 8px 8px 25px;
+border: 1px solid #CCC;
+-moz-border-radius: 5px;
+-webkit-border-radius: 5px;
+border-radius: 5px;
+-moz-box-shadow: 0 1px 1px #ccc inset, 0 1px 0 #fff;
+-webkit-box-shadow: 0 1px 1px #CCC inset, 0 1px 0 #FFF;
+box-shadow: 0 1px 1px #CCC inset, 0 1px 0 #FFF;
+} 
+
+#pass:focus { 
+background-color: #FFF; 
+border-color: #E8C291; 
+outline: none; 
+-moz-box-shadow: 0 0 0 1px #e8c291 inset; 
+-webkit-box-shadow: 0 0 0 1px #E8C291 inset; 
+box-shadow: 0 0 0 1px #E8C291 inset; 
+} 
+
+#fname, #lname, #email, #cpass, #npass, #napass, #runame,#rpass, #rpassagain { 
+border: 1px solid #c4c4c4; 
+height: 25px; 
+width: 190px; 
+font-size: 13px; 
+padding: 4px 4px 4px 4px; 
+border-radius: 4px; 
+-moz-border-radius: 4px; 
+-webkit-border-radius: 4px; 
+box-shadow: 0px 0px 8px #d9d9d9; 
+-moz-box-shadow: 0px 0px 8px #d9d9d9; 
+-webkit-box-shadow: 0px 0px 8px #d9d9d9; 
+} 
+ 
+#fname, #lname, #email, #cpass, #npass, #napass:focus { 
+outline: none; 
+border: 1px solid #7bc1f7; 
+box-shadow: 0px 0px 8px #7bc1f7; 
+-moz-box-shadow: 0px 0px 8px #7bc1f7; 
+-webkit-box-shadow: 0px 0px 8px #7bc1f7; 
+} 
+
+#loginbtn{
+width:75px;
+font-size: 12px;
+font-family:Arial Black;
+font-weight:normal;
+-moz-border-radius: 4px;
+-webkit-border-radius: 4px;
+border-radius: 4px;
+border: 1px solid #83c41a;
+padding: 8px 8px;
+text-shadow:1px 1px 0px #689324;
+-moz-box-shadow:inset 1px 1px 0px 0px #c1ed9c;
+-webkit-box-shadow:inset 1px 1px 0px 0px #c1ed9c;
+box-shadow:inset 1px 1px 0px 0px #c1ed9c;
+font-weight:normal;
+text-decoration:none;
+cursor: pointer;
+background:-webkit-linear-gradient(90deg, #8cb82b 5%, #9dce2c 100%);
+background:-moz-linear-gradient(90deg, #8cb82b 5%, #9dce2c 100%);
+background:-ms-linear-gradient(90deg, #8cb82b 5%, #9dce2c 100%);
+background:linear-gradient(180deg, #9dce2c 5%, #8cb82b 100%);
+filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#9dce2c', endColorstr='#8cb82b');
+/*background-color:#8cb82b;*/
+color:#ffffff;
+display:inline-block;
+}
+
+#loginbtn:hover
+{
+background:-webkit-linear-gradient(90deg, #9dce2c 5%, #8cb82b 100%);
+background:-moz-linear-gradient(90deg, #9dce2c 5%, #8cb82b 100%);
+background:-ms-linear-gradient(90deg, #9dce2c 5%, #8cb82b 100%);
+background:linear-gradient(180deg, #8cb82b 5%, #9dce2c 100%);
+filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#8cb82b', endColorstr='#9dce2c');
+/*background-color:#9dce2c;*/
+}
+
+#loginbtn:active {
+position:relative;
+top:1px;
+}
+
+#updatebtn, #cpassbtn, #rregisterbtn{
+width: 190px;
+font-size: 12px;
+font-family:Arial Black;
+font-weight:normal;
+-moz-border-radius: 4px;
+-webkit-border-radius: 4px;
+border-radius: 4px;
+border: 1px solid #83c41a;
+padding: 8px 8px;
+text-shadow:1px 1px 0px #689324;
+-moz-box-shadow:inset 1px 1px 0px 0px #c1ed9c;
+-webkit-box-shadow:inset 1px 1px 0px 0px #c1ed9c;
+box-shadow:inset 1px 1px 0px 0px #c1ed9c;
+font-weight:normal;
+text-decoration:none;
+cursor: pointer;
+background:-webkit-linear-gradient(90deg, #8cb82b 5%, #9dce2c 100%);
+background:-moz-linear-gradient(90deg, #8cb82b 5%, #9dce2c 100%);
+background:-ms-linear-gradient(90deg, #8cb82b 5%, #9dce2c 100%);
+background:linear-gradient(180deg, #9dce2c 5%, #8cb82b 100%);
+filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#9dce2c', endColorstr='#8cb82b');
+color:#ffffff;
+display:inline-block;
+}
+
+#updatebtn:hover
+{
+background:-webkit-linear-gradient(90deg, #9dce2c 5%, #8cb82b 100%);
+background:-moz-linear-gradient(90deg, #9dce2c 5%, #8cb82b 100%);
+background:-ms-linear-gradient(90deg, #9dce2c 5%, #8cb82b 100%);
+background:linear-gradient(180deg, #8cb82b 5%, #9dce2c 100%);
+filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#8cb82b', endColorstr='#9dce2c');
+}
+
+#rregisterbtn:hover
+{
+background:-webkit-linear-gradient(90deg, #9dce2c 5%, #8cb82b 100%);
+background:-moz-linear-gradient(90deg, #9dce2c 5%, #8cb82b 100%);
+background:-ms-linear-gradient(90deg, #9dce2c 5%, #8cb82b 100%);
+background:linear-gradient(180deg, #8cb82b 5%, #9dce2c 100%);
+filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#8cb82b', endColorstr='#9dce2c');
+}
+
+#cpassbtn:hover
+{
+background:-webkit-linear-gradient(90deg, #9dce2c 5%, #8cb82b 100%);
+background:-moz-linear-gradient(90deg, #9dce2c 5%, #8cb82b 100%);
+background:-ms-linear-gradient(90deg, #9dce2c 5%, #8cb82b 100%);
+background:linear-gradient(180deg, #8cb82b 5%, #9dce2c 100%);
+filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#8cb82b', endColorstr='#9dce2c');
+/*background-color:#9dce2c;*/
+}
+
+#rregisterbtn:active {
+position:relative;
+top:1px;
+}
+
+#updatebtn:active {
+position:relative;
+top:1px;
+}
+
+#cpassbtn:active {
+position:relative;
+top:1px;
+}
+
+#registerbtn{
+width:75px;
+font-size: 12px;
+font-family:Arial Black;
+font-weight:bold;
+-moz-border-radius: 4px;
+-webkit-border-radius: 4px;
+border-radius: 4px;
+border: 1px solid #83c41a;
+padding: 8px 8px;
+-moz-box-shadow:inset 1px 1px 0px 0px #c1ed9c;
+-webkit-box-shadow:inset 1px 1px 0px 0px #c1ed9c;
+box-shadow:inset 1px 1px 0px 0px #c1ed9c;
+font-weight:normal;
+text-decoration:none;
+cursor: pointer;
+background:-webkit-linear-gradient(90deg, #dfdfdf 5%, #ededed 100%);
+background:-moz-linear-gradient(90deg, #dfdfdf 5%, #ededed 100%);
+background:-ms-linear-gradient(90deg, #dfdfdf 5%, #ededed 100%);
+background:linear-gradient(180deg, #ededed 5%, #dfdfdf 100%);
+filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ededed', endColorstr='#dfdfdf');
+/*background-color:#dfdfdf;*/
+color:#000000;
+display:inline-block;
+}
+
+#registerbtn:hover
+{
+background:-webkit-linear-gradient(90deg, #ededed 5%, #dfdfdf 100%);
+background:-moz-linear-gradient(90deg, #ededed 5%, #dfdfdf 100%);
+background:-ms-linear-gradient(90deg, #ededed 5%, #dfdfdf 100%);
+background:linear-gradient(180deg, #dfdfdf 5%, #ededed 100%);
+filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#dfdfdf', endColorstr='#ededed');
+/*background-color:#ededed;*/
+}
+
+#registerbtn:active {
+position:relative;
+top:1px;
+}
+
+#username_password{
+font-family: 'Roboto', 'sans-serif';
+}
+
+#facebook{
+top: 50px;
+position: absolute;
+float: right;
+}
+
+#textList{
+font-family: 'Roboto', 'sans-serif';
+font-size: 20px;
+display:inline;
+position: relative;
+top: 50px;
+left: 350px;
+}
+
+#intro{
+width: 320px;
+font-size:20px;
+font-family: 'Roboto', sans-serif;
+position: relative;
+color: black;
+left: 30px;
+top: 200px;
+}
+

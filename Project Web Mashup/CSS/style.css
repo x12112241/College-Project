@@ -1,0 +1,31 @@
+body{
+background-image:url('http://trendmashing.gopagoda.com/images/image.jpg');
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+}
+#wrapper{
+height: 100%;
+width: 100%;
+}
+#header1{
+margin-left: auto;
+margin-right: auto;
+top: -20px;
+position: relative;
+clear:none;
+width: 550px;
+color:black;
+}
+
+
+img{
+border-radius: 10px;
+}
+
+#loginRef{
+font-family: 'Finger Paint', cursive;
+font-size: 10px;
+color: 	black;
+}

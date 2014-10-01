@@ -1,0 +1,152 @@
+/* @override 
+        http://iviewsource.com/exercises/ajax/mystyle.css */
+
+body {
+    background-image: url(images/back1.jpg);
+}
+
+#searcharea {
+    margin: 0 auto;
+    text-align: center;
+    background: white;
+    padding: 10px;
+    width: 30%;
+    height: 120px;
+    font-size: 12pt;
+    border-radius: 10px 10px 10px 10px;
+}
+
+#searcharea label {
+    font: bold 1.3em Arial;
+    text-transform: uppercase;
+    padding-bottom:  5px;
+    color: #A61C1C;
+}
+
+#searcharea p {
+    margin: 0;
+    line-height: 1em;
+    padding-bottom: 5px;
+}
+
+#searcharea input {
+    width: 80%;
+    text-align: center;
+}
+
+#update {
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 12pt;
+    width: 70%;
+    margin: 0 auto;
+    line-height: 250%;
+    padding: 10px 10px 10px;
+}
+
+#update ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#update ul li {
+    width: 100%;
+    padding: 0 20px;
+    background: #EEE;
+    padding-bottom: 10px;
+    height: 120px;
+    overflow: hidden;
+    border-bottom: 1px dotted #CCC;
+
+    -webkit-animation: myanim 1s;
+    -moz-animation: myanim 1s;
+    -o-animation: myanim 1s;
+    animation: myanim 1s;
+
+    -webkit-transition: height 0.3s ease-out;
+    -moz-transition: height 0.3s ease-out;
+    -o-transition: height 0.3s ease-out;
+    transition: height 0.3s ease-out;
+}
+
+#update li:hover {
+    background: #FFFCE5;
+    min-height: 110px;
+    height: 230px;
+    overflow: visible;
+}
+
+#update h2 {
+    margin: 0;
+    padding: 0;
+    font-size: 1.2em;
+    padding-bottom: 5px;
+    padding-top: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #BF5841;
+    border-bottom: 1px dotted #CCC;
+    margin-bottom: 10px;
+}
+
+
+
+@-webkit-keyframes myanim {
+    0% { opacity: 0.3; }
+    100% { opacity: 1.0; }
+}
+
+@-moz-keyframes myanim {
+    0% { opacity: 0.3; }
+    100% { opacity: 1.0; }
+}
+
+@-o-keyframes myanim {
+    0% { opacity: 0.3; }
+    100% { opacity: 1.0; }
+}
+
+@keyframes myanim {
+    0% { opacity: 0.3; }
+    100% { opacity: 1.0; }
+}
+
+#loggedin{
+    color: black;
+    background-color: white;
+    width: 700px;
+    height: 300px;
+    padding-left: 100px;
+    padding-right: 50px;
+    padding-top: 20px;
+    padding-bottom:20px;
+    border-radius: 10px 10px 10px 10px;
+    margin-left: 250px;
+}
+
+a{
+    padding: 10px;
+    margin-left:50px;
+    text-align: justify;
+}
+
+
+a:link,a:visited
+{
+    font-size: 18px;
+    font-weight:bold;
+    color:black;
+    text-align:center;
+    padding:4px;
+    text-decoration:none;
+    font-family: Segoe UI;
+}
+a:hover,a:active
+{
+    color: #0066cc;
+    background-color: #ededed;
+    height: 20px;
+    border-radius: 3px 3px 3px 3px;
+}
+
+
+
