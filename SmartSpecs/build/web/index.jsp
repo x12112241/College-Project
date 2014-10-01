@@ -15,87 +15,67 @@
         <link rel="stylesheet" type="text/css" href="style.css">
         <script language="javascript" type="text/javascript" src="js/jquery-1.3.js"></script>
         <script language="javascript" type="text/javascript" src="js/slidedown.js"></script>
+        <script language="javascript" type="text/javascript" src="js/script.js"></script>
+
     </head>
     <body>
         <div id="wrapper">
-            <nav>
-                <ul id="menu">
-                    <xsl:for-each select="catalog/lk">
-                        <li>
-                        <xsl:element name="a">
-                            <xsl:attribute name="href">
-                                <xsl:value-of select="link"/>
-                            </xsl:attribute>
-                            <xsl:value-of select="val"/>
-                        </xsl:element>
-                        </li>                         
-                    </xsl:for-each>                    
-                </ul>
-            </nav>
             <form action="HomeServlet">
                 <div id="heading"><h3>Welcome to Smart Specs</h3></div>
                 <div id="enterbutton"> <input type="Submit" value ="Enter" id="enter"></div>
+                <div id="serverTime">
+                    <h4><b onmouseover="getServerTime('serverTime')">Date & Time</b></h4></div>
                 <div id="login"> <a  id="loginlink" href="ProtectedServlet">Developer Login</a></div>
+
             </form>
-            <hr id="hrhome"/>
-            
-            <hr id="hrhome"/>
-            <iframe id="videoindex" width="560" height="315" src="//www.youtube.com/embed/ylP4DDwXZb8" frameborder="0" allowfullscreen></iframe>
-              
-            <h2>Samsung Galaxy S4</h2>
-
-<p><img src="http://www.imore.com/sites/imore.com/files/styles/large/public/field/image/2013/10/samsung_galaxy_s4_hero.jpg?itok=fmTDvbrt" width="80%" height="520" alt="" class="image-large aligncenter" /></p>
-
-<p>The Samsung Galaxy S4 is the current king of standard-sized Android handsets. And that 5-inches is standard sized now tells you a lot about the state of Android handsets these days! Like the iPhone 5s, the Galaxy S4 has been accused of being more tock than tick - an iterative improvement over last year's monstrously successful Galaxy S3. But what an iteration! Better in almost every way that matters, in addition to the larger, sharper screen, it brings improved performance, a 13-megapixel camera, and the latest version of Samsung's Android presentation layer, TouchWiz.</p>
-
-<p>Here's Android Central's <a href="http://www.androidcentral.com/samsung-galaxy-s4-review">Samsung Galaxy S4 review</a> by Alex Dobie:</p>
-
-<h3>Galaxy S4: The good</h3>
-
-<h4>The Galaxy S4 is a speedy all-rounder which manages to deliver great performance and a big, bright screen in an ergonomic package. Widespread availability, tons of features and a fairly recent version of Android work in the S4’s favor, as does its impressive 13-megapixel camera.</h4>
-
-<h3>Galaxy S4: The bad</h3>
-
-<p>The TouchWiz UI remains a clumsy construction, and still lacks any kind of overarching design language. The bewildering array of settings and features and poor UX design will confuse some users. The occasional performance hiccups are disappointing to see, and the plastic chassis feels cheap.</p>
-
-<h3>Galaxy S4: The bottom line</h3>
-
-<p>If you’re looking for an Android phone that performs well across the board, ticks every feature box you could possibly imagine and is available on just about every carrier on the planet, the Galaxy S4 is an easy recommendation. But this time around it’s clear Samsung has merely stacked incremental updates -- mostly features and internal hardware -- upon its earlier flagship, rather than addressing that device’s issues and rethinking what a smartphone should be in 2013. For some folks, that’s fine. For others, more exciting products await elsewhere.</p>
-
-<h2>iPhone 5s</h2>
-
-<p><img src="http://www.imore.com/sites/imore.com/files/styles/large/public/field/image/2013/09/iphone_5s_apple_store_hero_0.jpg?itok=6s-R_Ypv" width="1240" height="930" alt="" class="image-large aligncenter" /></p>
-
-<p>Like the Galaxy S4, the iPhone 5s takes last year's smash hit to an incrementally new level. It has the first 64-bit mobile processor, the <a href="http://www.imore.com/apple-a7">Apple A7</a>, the <a href="http://www.imore.com/apple-m7">Apple M7</a> motion coprocessor, a much improved 8-megapixel <a href="http://www.imore.com/isight">iSight</a> camera, increased LTE support, and the <a href="http://www.imore.com/touch-id">Touch ID</a> fingerprint identity sensor. It has the same 4-inch screen, but it also has the newly redesigned <a href="http://www.imore.com/ios-7-review">iOS 7</a>.</p>
-
-<p>Here's iMore's <a href="http://localhost:8080/SmartSpecs/PhoneSpecsServlet?name=iPhone%205S">iPhone 5s review</a> by your's truly:</p>
-
-<h3>iPhone 5s: The good</h3>
-
-<p>The iPhone 5s is twice as fast as last year's already fast model. The improvements to the camera, including new 120fps slow motion video, are considerable. Built on top of a physics and particle engine, iOS 7 is not only a welcome redesign for Apple, but for the industry. Likewise, Touch ID works so well you'll immediately want it on everything.</p>
-
-<h3>iPhone 5s: The bad</h3>
-
-<p>Aside from the processors, camera, and Touch ID, not much has changed, unless you count new space gray and gold colors. It's still a 4-inch screen, which some people might find small, and while iOS 7 is beautiful in many ways, it's unfinished in some, and without the customization available to Android.</p>
-
-<h3>iPhone 5s: The bottom line</h3>
-
-<p>Apple call's the iPhone 5s their most forward-thinking iPhone ever, and on that they deliver. From iOS 7 to Touch ID to 64-bit, it's next-year's technology in your hand today. It's going to be on most carriers, in most countries in the world, and with the usual, unmatched app, accessory, and media support. Ultimately, it's the best iPhone ever. Again. If that's not what you want, Apple has nothing different to offer you. If it is, get it now.</p>
-
-<h2>So which one should you get?</h2>
-
-<p>Neither Samsung nor Apple fundamentally changed the game this year. Each simply got better at playing their existing strategies. And that's okay. But it means the decision remains essentially the same.</p>
-
-<ul><li><p>If a bigger screen and the ability to customize is more important to you than running iOS and all the high quality apps and accessories that come with it, or if you simply don't like Apple, go with the Galaxy S4.</p></li>
-<li><p>If access to the iOS App Store, iTunes, and Apple Stores is more important to you than the power and flexibility that comes with Android, or you simply don't like Samsung, go with the iPhone 5s.</p></li>
-</ul><p>That's boiling it down to ridiculously absurd levels, but that's what buying decisions are all about. If you're still not sure, here are full reviews for both phones, and the best forums in the world to ask questions and get answers. Once you've decided, leave a comment below telling me why you went the way you did!</p>
-
-<ul><li><a href="http://www.androidcentral.com/samsung-galaxy-s4-review">Samsung Galaxy S4 review</a></li>
-<li><p><a href="http://forums.androidcentral.com/samsung-galaxy-s4/">Samsung Galaxy S4 forum</a></p></li>
-<li><p><a href="http://www.imore.com/iphone-5s-review">iPhone 5s review</a></p></li>
-<li><a href="http://forums.imore.com/iphone-5s/">iPhone 5s forum</a></li>
-</ul><h2>Still undecided?</h2>
 
 
-            </body>
-            </html>
+            <hr id="hr1"/>
+
+            <img id="bannerindex" src="images/banner.png" alt="Banner"/>
+            <button id="aboutbut" class="aboutbut">About</button>
+            <button id="morebut" class="morebut">More</button>
+            <button id="vrsbut" class="vrsbut">Head To Head</button>
+            <button id="videobut" class="videobut">Latest Video</button>
+            <div id="about">
+                <p>Smart Specs is a Smartphone comparison site that enables visitors to
+                    compare the latest Apple and Samsung products on the market such as
+                    the iPhone 5S & Samsung Galaxy S4 etc.</p>
+
+                <p> Smart Specs also write there own reviews from there own personal 
+                    experiences with the phones. This provides users with an insight to what
+                    to expect if they were to choose to purchase one of them.</p> 
+
+                
+
+            </div>
+            <div id="more">
+                The site was developed early 2013, and was finally completed and ready to be ported online in December 2013.
+
+                As a group of Computing students including Brian Murphy, Ben Callaghan & Aaron Kane,
+                we decided to develop a site that easily compares the latest and most popular smartphones
+                within a click of a button.
+                
+                <p>Any queries please send them to queries@smartspecs.com</p>
+            </div>
+            <div id="video">
+                <iframe width="560" height="315" src="//www.youtube.com/embed/vKnKOpfXmIc" frameborder="0" allowfullscreen></iframe><br/><br/>
+                <iframe width="560" height="315" src="//www.youtube.com/embed/0xVkzeuZo3s" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <div id="headtohead">
+                <p>The battle for control of the top-end smartphone market between Korean contender Samsung and ruling US heavyweight Apple has become a yearly feature within the technology industry. 
+                    The latest competition is between the new Apple iPhone 5S and Samsung's flagship Galaxy S4. 
+                    We've put these two flagship handsets head to head to see if the older S4 can still hold its ground against the latest premium iPhone.</p>
+                    
+                    
+                    
+                    <p> Neither Samsung nor Apple chose to radically redesign their latest flagship smartphones. Outside of its extended Champagne and Space Grey colour options the iPhone 5S is visually identical to the iPhone 5 and features the exact same 124x59x7.6mm dimensions and 112g weight.</p>
+                    <img alt="Apple iPhone 5S vs Samsung galaxy S4" border="0" src="images/iphone-5s-vs-samsung-galaxy-s4 back.jpg"  class="center"   title="Apple iPhone 5S vs Samsung galaxy S4 back"  width="540" height="334" />
+                    <p>Despite being heavier and larger than the 112g iPhone 5S, the 130g S4 is more comfortable to hold. This is because the S4's slightly round edges make it sit more neatly in hand than the hard-edged 5S.</p>
+However, when it comes to build quality we have to give it to the iPhone 5S. The build of Samsung handsets has been an ongoing concern, with the firm's use of polycarbonate making even its most expensive devices feel fairly cheap. This has remained true with the S4, which has the same polycarbonate backplate and metal sides as the S3, and feels significantly less solid than the iPhone 5S.
+Testing the two more thoroughly, our in-hand impressions rang true, with the S4 picking up marks and scratches when met with even the slightest force. That said, it's important to note the iPhone 5S is also fairly prone to picking up marks and scratches and is nowhere near as well built as a number of other top-end Android and Windows Phone handsets, such as the Sony Xperia Z1 and Nokia Lumia 1020.
+Winner: The Apple iPhone 5S</p>
+            </div>    
+        </div>
+    </body>
+</html>

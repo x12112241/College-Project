@@ -1,0 +1,90 @@
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="smartspecs">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="phone">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element type="xs:string" name="name"/>
+                            <xs:element type="xs:string" name="banner"/>
+                            <xs:element name="smartphones">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="smartphone" maxOccurs="unbounded" minOccurs="0">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element type="xs:string" name="name"/>
+                                                    <xs:element name="image">
+                                                        <xs:complexType>
+                                                            <xs:simpleContent>
+                                                                <xs:extension base="xs:string">
+                                                                    <xs:attribute type="xs:string" name="id" use="optional"/>
+                                                                </xs:extension>
+                                                            </xs:simpleContent>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                    <xs:element name="display">
+                                                        <xs:complexType>
+                                                            <xs:sequence>
+                                                                <xs:element type="xs:string" name="size"/>
+                                                                <xs:element type="xs:string" name="resolution"/>
+                                                                <xs:element type="xs:string" name="features"/>
+                                                            </xs:sequence>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                    <xs:element name="design">
+                                                        <xs:complexType>
+                                                            <xs:sequence>
+                                                                <xs:element type="xs:string" name="operatingsystem"/>
+                                                                <xs:element type="xs:string" name="dimensions"/>
+                                                                <xs:element type="xs:string" name="material"/>
+                                                                <xs:element type="xs:string" name="weight"/>
+                                                            </xs:sequence>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                    <xs:element name="camera">
+                                                        <xs:complexType>
+                                                            <xs:sequence>
+                                                                <xs:element type="xs:string" name="pixels"/>
+                                                                <xs:element type="xs:string" name="flash"/>
+                                                                <xs:element type="xs:string" name="camcorder"/>
+                                                                <xs:element type="xs:string" name="front"/>
+                                                            </xs:sequence>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                    <xs:element name="hardware">
+                                                        <xs:complexType>
+                                                            <xs:sequence>
+                                                                <xs:element type="xs:string" name="features"/>
+                                                                <xs:element type="xs:string" name="chip"/>
+                                                                <xs:element type="xs:string" name="processor"/>
+                                                                <xs:element type="xs:string" name="graphics"/>
+                                                                <xs:element type="xs:string" name="memory"/>
+                                                                <xs:element type="xs:string" name="storage"/>
+                                                            </xs:sequence>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                    <xs:element name="cost">
+                                                        <xs:complexType>
+                                                            <xs:sequence>
+                                                                <xs:element type="xs:string" name="name"/>
+                                                                <xs:element type="xs:string" name="sixteen"/>
+                                                                <xs:element type="xs:string" name="thirtytwo"/>
+                                                                <xs:element type="xs:string" name="sixtyfour" minOccurs="0"/>
+                                                            </xs:sequence>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                </xs:sequence>
+                                                <xs:attribute type="xs:byte" name="id" use="optional"/>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

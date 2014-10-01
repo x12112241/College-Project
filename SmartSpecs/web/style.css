@@ -38,7 +38,7 @@ body{
 
 #iphone5cimage1{
     width:360px;
-    height:600px;
+    height:900px;
     float: left;
     margin-left: 50px;
     clear: none;
@@ -65,7 +65,9 @@ a:link,a:visited
 a:hover,a:active
 {
     color: #0066cc;
-    
+    background-color: #ededed;
+    height: 20px;
+    border-radius: 3px 3px 3px 3px;
 }
 
 #enter {
@@ -114,8 +116,9 @@ a:hover,a:active
 
 #wrapper{
     width:900px;;
-    height:100%;
+    height:1200px;
     margin:0 auto;
+    padding-top: 20px;
     border:1px solid #CCCCCC;
     clear:none;
     background-color: white;
@@ -164,12 +167,12 @@ a:hover,a:active
 
 #cost{
     float:left;
-    margin-top: 35px;
+    margin-top: 50px;
     margin-left: 90px;
     color:navy;
 }
 
-.buttonh,.buttons {
+.buttonh,.buttons, .aboutbut, .contactbut, .morebut,.videobut ,.vrsbut{
 	-moz-box-shadow:inset 0px 1px 0px 0px #bbdaf7;
 	-webkit-box-shadow:inset 0px 1px 0px 0px #bbdaf7;
 	box-shadow:inset 0px 1px 0px 0px #bbdaf7;
@@ -204,7 +207,7 @@ a:hover,a:active
 	text-align:center;
 	text-shadow:1px 1px 0px #528ecc;
 }
-.buttonh,.buttons :hover {
+.buttonh:hover,.buttons:hover,.aboutbut:hover,.morebut:hover,.videobut:hover .vrsbut:hover {
 	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #378de5), color-stop(1, #79bbff) );
 	background:-moz-linear-gradient( center top, #378de5 5%, #79bbff 100% );
 	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#378de5', endColorstr='#79bbff');
@@ -220,12 +223,10 @@ a:hover,a:active
     font-size: 10px;
     width: 300px;
     border-radius: 10px 10px 10px 10px;
+    padding: 10px 10px 10px;
     background-color: white;
-    float: left;
     color: black;
     text-align: center;
-    margin-top:20px;
-    margin-left: 140px;
 }
 
 #loginlink{
@@ -242,6 +243,113 @@ table{
 
 #videoindex{
     margin-left:140px;
-    margin-top: 20px;
+    margin-top: 50px;
 }
+
+#banner{
+    margin-top: 40px;
+}
+
+textarea{
+    width: 100%;
+}
+
+#test{
+    margin: 20px 0;
+}
+
+#about{
+    color: black;
+    margin-top: 100px;
+    margin-left:100px;
+}
+
+#serverTime{
+    color: black;
+    margin-left: 50px;
+    clear: none;
+    float: left;
+}
+
+#specsXML{
+    margin-left: 15px;
+}
+
+#xmlinfo {
+    background-color:#9dce2c;
+    text-indent:0;
+    border:1px solid #83c41a;
+    display:inline-block;
+    color:#ffffff;
+    font-family:Trebuchet MS;
+    font-size:15px;
+    font-weight:bold;
+    font-style:normal;
+    height:40px;
+    line-height:40px;
+    width:150px;
+    text-decoration:none;
+    text-align:center;
+
+}
+#xmlinfo:hover {
+    background-color:#8cb82b;
+}#xmlinfo:active {
+    position:relative;
+    top:1px;
+}
+
+#table1, #tdxml{
+    width: 360px;
+    background-color: #FDFDFD;
+    border-collapse:collapse;
+    font-size: 12pt;
+}
+
+#about{
+    font-size: 13pt;
+    line-height: 200%;
+    color: #191970;
+    width: 700px;
+}
+
+#aboutbut{
+    margin-left: 100px;
+}
+
+#more{
+    font-size: 13pt;
+    line-height: 200%;
+    color: #191970;
+    width: 700px;
+    margin-left: 100px;
+    margin-top:50px;
+    display:none;
+}
+
+#video{
+    margin-left: 100px;
+    margin-top: 40px;
+    display: none;
+}
+
+#headtohead{
+    font-size: 13pt;
+    line-height: 200%;
+    color: #191970;
+    width: 700px;
+    margin-left: 100px;
+    margin-top: 30px;
+    display: none;
+}
+
+#banner2{
+    margin-left: 100px;
+    margin-top: 50px;
+    color: navy;
+}
+
+
+
+
 

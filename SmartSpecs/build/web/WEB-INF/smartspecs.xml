@@ -154,18 +154,24 @@
                     <storage>Built-in storage: 32 GB</storage>
                 </hardware>
                 <cost>
-                    <name>
+                   <name>
                         Cost
                     </name>
+                    <sixteen>
+                        16GB - None
+                    </sixteen>
                     <thirtytwo>
                         32GB - €649
                     </thirtytwo>
+                    <sixtyfour>
+                        64GB - None
+                    </sixtyfour>
                 </cost>
     
             </smartphone>
             <smartphone id="4">
                 <name>Samsung Galaxy S4</name>
-                <image id="front">images/galaxys4.jpg</image>
+                <image id="front">images/s4.jpg</image>
                
                 <display>
                     <size>Size: 5.0 inches </size>
@@ -207,9 +213,16 @@
                     <name>
                         Cost
                     </name>
-                    <thirtytwo>
+                    <sixteen>
                         16GB - €509
+                    </sixteen>
+                    <thirtytwo>
+                        32GB - None
                     </thirtytwo>
+                    <sixtyfour>
+                        64GB - None
+                    </sixtyfour>
+               
                 </cost>
     
             </smartphone>

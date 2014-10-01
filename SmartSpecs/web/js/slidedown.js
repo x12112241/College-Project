@@ -24,149 +24,142 @@ $(document).ready(function() {
         $("#buying").fadeIn(1500);
     });
 });
-
-
-
-
-// Load this script once the document is ready 
-
+//fade out banner
 $(document).ready(function() {
-
-    // Get all the thumbnail 
-
-
-    $('div.thumbnail-item').mouseenter(function(e) {
-
-        // Calculate the position of the image tooltip 
-
-
-        x = e.pageX - $(this).offset().left;
-
-
-        y = e.pageY - $(this).offset().top;
-
-        // Set the z-index of the current item,  
-
-
-        // make sure it's greater than the rest of thumbnail items 
-
-
-        // Set the position and display the image tooltip 
-
-        $(this).css('z-index', '15')
-
-                .children("div.tooltip")
-
-
-                .css({'top': y + 10, 'left': x + 20, 'display': 'block'});
-
-
-    }).mousemove(function(e) {
-
-        // Calculate the position of the image tooltip    
-
-
-        x = e.pageX - $(this).offset().left;
-
-
-        y = e.pageY - $(this).offset().top;
-
-
-
-
-
-        // This line causes the tooltip will follow the mouse pointer 
-
-
-        $(this).children("div.tooltip").css({'top': y + 10, 'left': x + 20});
-
-    }).mouseleave(function() {
-
-        // Reset the z-index and hide the image tooltip  
-
-
-        $(this).css('z-index', '1')
-
-
-                .children("div.tooltip")
-
-
-                .animate({"opacity": "hide"}, "fast");
-
-
+    $("#banner").click(function() {
+        $(this).fadeOut(1000);
     });
 });
 
-// Load this script once the document is ready 
-
+//show about
 $(document).ready(function() {
-
-    // Get all the thumbnail 
-
-
-    $('div.thumbnail-item2').mouseenter(function(e) {
-
-        // Calculate the position of the image tooltip 
-
-
-        x = e.pageX - $(this).offset().left;
-
-
-        y = e.pageY - $(this).offset().top;
-
-        // Set the z-index of the current item,  
-
-
-        // make sure it's greater than the rest of thumbnail items 
-
-
-        // Set the position and display the image tooltip 
-
-        $(this).css('z-index', '15')
-
-                .children("div.tooltip2")
-
-
-                .css({'top': y + 10, 'left': x + 20, 'display': 'block'});
-
-
-    }).mousemove(function(e) {
-
-        // Calculate the position of the image tooltip    
-
-
-        x = e.pageX - $(this).offset().left;
-
-
-        y = e.pageY - $(this).offset().top;
-
-
-
-
-
-        // This line causes the tooltip will follow the mouse pointer 
-
-
-        $(this).children("div.tooltip2").css({'top': y + 10, 'left': x + 20});
-
-    }).mouseleave(function() {
-
-        // Reset the z-index and hide the image tooltip  
-
-
-        $(this).css('z-index', '1')
-
-
-                .children("div.tooltip2")
-
-
-                .animate({"opacity": "hide"}, "fast");
-
-
+    $("#aboutbut").click(function() {
+        $("#more").hide();
+        $("#video").hide();
+          $("#headtohead").hide();
+        $("#about").slideDown(1000);
     });
 });
 
+//hide about
+$(document).ready(function() {
+    $("#morebut").click(function() {
+        $("#about").slideUp(1000);
+    });
+});
 
+//show more
+$(document).ready(function() {
+    $("#morebut").click(function() {
+        $("#video").hide();
+        $("#about").hide();
+        $("#more").slideDown(1000);
+          $("#headtohead").hide();
+    });
+});
+
+//show video
+$(document).ready(function() {
+    $("#videobut").click(function() {
+        $("#more").hide();
+        $("#about").hide();
+        $("#headtohead").hide();
+        $("#video").slideDown(1000);
+    });
+});
+
+//Show Head to head
+$(document).ready(function() {
+    $("#vrsbut").click(function() {
+        $("#more").hide();
+        $("#about").hide();
+        $("#video").hide();
+        $("#headtohead").slideDown(1000);
+    });
+});
+
+//request to server for date & time
+var XHRObject = false;
+if (window.XMLHttpRequest) {
+    XHRObject = new XMLHttpRequest();
+}
+else if (window.ActiveXObject) {
+    XHRObject = new ActiveXObject("Microsoft.XMLHTTP");
+}
+
+function getServerTime(divID) {
+    if (XHRObject) {
+        var obj = document.getElementById(divID);
+        XHRObject.open("GET", "timeServer.jsp");
+        XHRObject.onreadystatechange = function() {
+            if (XHRObject.readyState == 4 && XHRObject.status == 200)
+            {
+                obj.innerHTML = XHRObject.responseText;
+            }
+        }
+        XHRObject.send(null);
+    }
+}
+
+//load xml data according to element id
+function loadXMLDoc(url)
+{
+    var xmlhttp;
+    var txt, x, xx, i;
+    if (window.XMLHttpRequest)
+    {// code for IE7+, Firefox, Chrome, Opera, Safari
+        xmlhttp = new XMLHttpRequest();
+    }
+    else
+    {// code for IE6, IE5
+        xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+    }
+    xmlhttp.onreadystatechange = function()
+    {
+        if (xmlhttp.readyState == 4 && xmlhttp.status == 200)
+        {
+            txt = "<table border='1' id='table1'><tr><th>Name</th><th>Cost (16GB)</th><th>Cost (32GB)</th></tr>";
+            x = xmlhttp.responseXML.documentElement.getElementsByTagName("smartphone");
+
+            for (i = 0; i < x.length; i++)
+            {
+
+                txt = txt + "<tr>";
+                xx = x[i].getElementsByTagName("name");
+                {
+                    try
+                    {
+                        txt = txt + "<td>" + xx[0].firstChild.nodeValue + "</td>";
+                    }
+                    catch (er)
+                    {
+                        txt = txt + "<td> </td>";
+                    }
+                }
+                xx = x[i].getElementsByTagName("cost");
+                {
+                    try
+                    {
+                        var xx1 = xx[0].getElementsByTagName("sixteen");
+                        txt = txt + "<td>" + xx1[0].firstChild.nodeValue + "</td>";
+                        var xx2 = xx[0].getElementsByTagName("thirtytwo");
+                        txt = txt + "<td>" + xx2[0].firstChild.nodeValue + "</td>";
+                    }
+
+                    catch (er)
+                    {
+                        txt = txt + "<td> </td>";
+                    }
+                }
+                txt = txt + "</tr>";
+            }
+            txt = txt + "</table>";
+            document.getElementById('specsXML').innerHTML = txt;
+        }
+    }
+    xmlhttp.open("GET", url, true);
+    xmlhttp.send();
+}
 
 
 

@@ -3,19 +3,24 @@
 "name":"iPhone 5S",
         "shortname":"5s",
         "reknown":"Colours: Silver, Black, Gold",
-        "bio":"The good: The iPhone 5 adds everything we wanted in the iPhone 4S: 4G LTE, a longer, larger screen, free turn-by-turn navigation, and a faster A6 processor. Plus, its top-to-bottom redesign is sharp, slim, and feather-light. The bad: Apple Maps feels unfinished and buggy; Sprint and Verizon models can't use voice and data simultaneously. The smaller connector renders current accessories unusable without an adapter. There's no NFC, and the screen size pales in comparison to jumbo Android models. The bottom line: The iPhone 5 completely rebuilds the iPhone on a framework of new features and design, addressing its major previous shortcomings. It's absolutely the best iPhone to date, and it easily secures its place in the top tier of the smartphone universe."
+        "bio":"The Good: Amazingly thin and light, Bigger more vibrant screen, Fast 4G LTE speeds, Very good battery life, Improved camera. The Bad: Half-baked Maps app, Very few interface enhancements, Operating system here that's beginning to feel a bit dated, Bigger screen size not utilized at all, IOS 6 a retread of familiar territory."
 },
 {
 "name":"iPhone 5C",
         "shortname":"5c",
         "reknown":"Colours: Blue, Yellow, Green, Blue",
-        "bio":"The good: The iPhone 5C is available for $99 or less on contract, and in five bright colors. Compared with the 2012 iPhone 5, it’s got more widely compatible global LTE coverage, an upgraded front-facing camera, and slightly better battery life. The bad: This phone is 2012 tech dressed up in a brighter package for 2013; the four-inch Retina Display feels small compared with most Android phones. The bottom line: The iPhone 5C is a great $99 phone that basically replicates the well-reviewed iPhone 5 in a more colorful case."
+        "bio":"The Good: Essentially the same phone inside as the iPhone 5, Lots more LTE band support, New design, colourful, Good camera, Available for €599 or less on prepay. The Bad: Still quite pricey outright, Could miss out on some apps or app features designed for 64-bit iPhone 5s, The four-inch Retina Display feels small compared with most Android phones."
 },
 {
 "name":"Samsung Galaxy Note 3",
         "shortname":"note 3",
         "reknown":"Colours: White, Blue, Red",
-        "bio":"Pros: Strong battery life; Gorgeous full-HD screen; Sharp camera; Useful pen apps; Powerful performance Cons: Not one-hand-friendly; Aggressive crapware; Inconsistent LTE performance The Verdict: With its big and bright display, long battery life and improved pen input capability, the Note 3 is the phablet to beat."
+        "bio":"The Good: Great screen. Lots of stylus functionality, Expandable memory, Screaming quad-core processor, Refined S Pen skills. The Bad: Expensive, Poor low-light camera performance, Complicated to use, Faux-leather styling is crafted from cheap plastic."
+},
+{
+"name":"Samsung Galaxy S4",
+        "shortname":"s4",
+        "reknown":"Colours: White, Blue, Black",
+        "bio":"The Good: Stunning screen, Great camera, Powerful Quad-core processo, Compact phone, Android 4.2.2 out of the box. The Bad: Dimmer screen than competitors, Mediocre call quality, Innovation' doesn't wow, UI issues, Thin plastic casing."
 }
-
 ]

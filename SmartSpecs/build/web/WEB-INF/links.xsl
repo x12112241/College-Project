@@ -24,7 +24,12 @@
                              
                       </xsl:element>
 		</xsl:for-each>
-              <img src="images/banner.png" alt="Banner"/>
+                
+              <img id="banner" src="images/banner.png" alt="Banner"/><hr id="1"/>
+              <div id="banner2">
+                <h3 id="linkh"><a href="search.html" id="links"> Check out the latest reviews on the S4, Note 3, iPhone 5S and iPhone 5C!</a></h3>
+                <img src="images/iphoneflat.jpg" alt="Banner"/>
+            </div>
 	</xsl:template>
         
         

@@ -47,13 +47,14 @@ public class ProtectedServlet extends HttpServlet {
     }
 
     // If we get here, the user has logged in and can see the goods
-    out.println("<html><head><link rel=\"stylesheet\" type=\"text/css\" href=\"searchstyle.css\"/>"
+    out.println("<html><head><script language=\"javascript\" type=\"text/javascript\" src=\"js/slidedown.js\"></script>"
+            + "<link rel=\"stylesheet\" type=\"text/css\" href=\"searchstyle.css\"/>"
             + "<title>Information</title></head><body>");
     out.println("<div id=\"loggedin\"><p align=\"right\">" + done + " (<a href=\"Logout\">logout</a>)</p>");
     out.println("<h1>Welcome!</h1>");
-    out.println("<p>Developer Login Area</p>");
+    out.println("<p>You are now Logged In</p>");
     out.println("<p>The following ");
-    out.println("updates Smart Specs requested  are to be added to the site.</p> ");
+    out.println("Smart Specs Note: add more reviews t</p> ");
     out.println("<p align=\"right\"><a href=\""+ request.getContextPath() + "/" +"\">home</p>");
     out.println("</div></body></html>");
   }

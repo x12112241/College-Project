@@ -13,8 +13,8 @@
                 
                 <div id="wrapper">
                     
-                  
-                    <a href="HomeServlet" id="links">Homepage</a>
+                    <a href="index.jsp" id="links">Homepage</a>
+                    <a href="HomeServlet" id="links">Phones Home</a>
                     <a href="search.html" id="links">Smart Spec Reviews</a>
                   
                     <hr id="hr1"/>
@@ -25,7 +25,7 @@
                     </xsl:for-each>                    
 
                     <xsl:apply-templates select="*"/>
-                   <hr id="hr1"/>
+                    <hr id="hr1"/>
                    
                 </div>
                 

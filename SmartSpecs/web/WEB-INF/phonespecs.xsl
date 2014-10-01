@@ -28,13 +28,14 @@
                         
                         <link rel="stylesheet" type="text/css" href="style.css"/>
                         
+                        
                     </head>
                     <body>
                         
                         <div id="wrapper">
               
 
-                            <img src="images/banner.png" alt="Banner"/>
+                            <img id="banner" src="images/banner.png" alt="Banner"/>
                             <div id="iphone5cimage1">
                                 
                         
@@ -46,8 +47,7 @@
                                 </xsl:element>
                                 
                                 <xsl:value-of select="images"/>
-                            
-                                
+
                                 <br/>
                                 <br/>
                                 
@@ -79,8 +79,12 @@
                                         <br/>
                                     </h2> 
                                 </div>
-                                
+                               
+                                 <div id="specsXML">
+                                <button id="xmlinfo" onclick="loadXMLDoc('smartspecs.xml')">Compare Prices</button>
                             </div>
+                            </div>
+                           
                               
                             
                             
@@ -153,7 +157,7 @@
                                         </a>
                                         
                                         <a href="http://www.carphonewarehouse.ie/aspx/Homepage.aspx">
-                                            <img src="images/carfone.jpg" alt="HTML tutorial" width="80" height="120"/>
+                                            <img src="images/carfone.jpg" alt="HTML tutorial" width="100" height="150"/>
                                         </a>  
                                         <a href="http://www.three.ie/">
                                             <img src="images/three.png" alt="HTML tutorial" width="60" height="70"/>
