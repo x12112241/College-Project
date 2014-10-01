@@ -1,0 +1,69 @@
+body{
+background-image:url('http://trendmashing.gopagoda.com/images/image.jpg');
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+}
+#wrapper{
+height: 100%;
+width: 100%;
+}
+#header{
+margin-left: auto;
+margin-right: auto;
+clear:none;
+width: 550px;
+color:black;
+}
+
+#title{
+font-family: 'Dosis', 'sans-serif';
+font-size: 30px;
+color: 	black;
+clear: none;
+/*#0F2E4C */
+}
+
+#content{
+height:500px;
+width: 100%;
+}
+
+#searchbox{
+position:fixed;
+}
+
+img{
+border-radius: 10px;
+}
+
+#icons{
+padding-top:5px;
+}
+
+#logo{
+font-family: 'Montserrat', italic;
+font-size: 100px;
+color: 	#0F2E4C;
+clear: both;
+}
+
+#up{
+width: 60px;
+height: 60px;
+position: fixed;
+bottom: 100px;
+}
+
+#loginRef{
+font-family: 'Finger Paint', cursive;
+font-size: 10px;
+color: 	black;
+}
+
+#loginslide{
+border:0 none !important;
+outline:0 !important;
+}
+
